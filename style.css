@@ -96,10 +96,6 @@ body {
 }
 
 
-.tag-container {
-    margin-top: 70px;
-}
-
 .faq-qrapper {
     margin-bottom: 30px !important;
 }
@@ -188,3 +184,5 @@ body {
     background-position: 50%;
     background-size: cover;
 }
+
+
