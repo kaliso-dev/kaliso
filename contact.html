@@ -2555,28 +2555,49 @@
                             </style>
                         </div>
                         <div autocomplete="off" class="form-block w-form">
-                            <form method="POST" class="form_contain"
-                                autocomplete="off" name="wf-form-Contact-Form" data-name="Contact Form"
-                                data-enter="true" id="wf-form-Contact-Form" 
-                                data-turnstile-sitekey="0x4AAAAAAAQTptj2So4dx43e" aria-label="Contact Form" netlify>
-                                <div class="input-group">
-                                    <div class="input-halves">
-                                        <div class="text-field-wrapper"><label for=""
-                                                class="form-label">NAME</label><input class="text-field w-input"
-                                                data-wfhsfieldname="FormTextInput-2" maxlength="256" name="Name"
-                                                data-name="Name" placeholder="" type="text" id="Name" required=""></div>
-                                        <div class="text-field-wrapper half"><label for="Email"
-                                                class="form-label">EMAIL</label><input class="text-field w-input"
-                                                data-wfhsfieldname="FormTextInput-3" maxlength="256" name="Email"
-                                                data-name="Email" placeholder="" type="email" id="Email" required="">
-                                        </div>
-                                    </div>
-                                    <div class="text-field-wrapper half"><label for=""
-                                            class="form-label">mESSAGE</label><textarea class="text-field area w-input"
-                                            data-wfhsfieldname="FormTextarea-6" maxlength="5000" name="Message"
-                                            data-name="Message" placeholder="" id="Message" required=""></textarea>
-                                    </div>
-                                </div>
+  <form method="POST" class="form_contain"
+        autocomplete="off" 
+        name="wf-form-Contact-Form" 
+        data-name="Contact Form"
+        data-enter="true" 
+        id="wf-form-Contact-Form"
+        aria-label="Contact Form"
+        data-netlify="true">
+
+    <!-- Champ caché obligatoire pour Netlify -->
+    <input type="hidden" name="form-name" value="wf-form-Contact-Form">
+
+    <div class="input-group">
+      <div class="input-halves">
+        <div class="text-field-wrapper">
+          <label for="Name" class="form-label">NAME</label>
+          <input class="text-field w-input"
+                 maxlength="256"
+                 name="Name"
+                 id="Name"
+                 type="text"
+                 required>
+        </div>
+        <div class="text-field-wrapper half">
+          <label for="Email" class="form-label">EMAIL</label>
+          <input class="text-field w-input"
+                 maxlength="256"
+                 name="Email"
+                 id="Email"
+                 type="email"
+                 required>
+        </div>
+      </div>
+      <div class="text-field-wrapper half">
+        <label for="Message" class="form-label">MESSAGE</label>
+        <textarea class="text-field area w-input"
+                  maxlength="5000"
+                  name="Message"
+                  id="Message"
+                  required></textarea>
+      </div>
+    </div>
+
                                 <div class="group check">
                                     <h2 class="fs6">Service</h2>
                                     <div class="shapes">
@@ -3251,6 +3272,21 @@
     <script src="https://hubspotonwebflow.com/assets/js/form-124.js" type="text/javascript"
         integrity="sha384-bjyNIOqAKScdeQ3THsDZLGagNN56B4X2Auu9YZIGu+tA/PlggMk4jbWruG/P6zYj"
         crossorigin="anonymous"></script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const fakeBtn = document.querySelector(".cta-main"); // ton <a>
+    const realSubmit = document.querySelector(".contact-form-submit"); // ton input submit
+
+    if (fakeBtn && realSubmit) {
+      fakeBtn.addEventListener("click", function (e) {
+        e.preventDefault(); // empêche le lien de se comporter comme un <a>
+        realSubmit.click(); // déclenche le vrai submit Netlify
+      });
+    }
+  });
+</script>
 </body>
 
 </html>
