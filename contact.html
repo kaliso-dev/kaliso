@@ -2555,91 +2555,82 @@
                             </style>
                         </div>
                         <div autocomplete="off" class="form-block w-form">
-  <form method="POST" class="form_contain"
-        autocomplete="off" 
-        name="wf-form-Contact-Form" 
-        data-name="Contact Form"
-        data-enter="true" 
-        id="wf-form-Contact-Form"
-        aria-label="Contact Form"
-        data-netlify="true">
+                            <form method="POST" 
+                                class="form_contain"
+                                autocomplete="off" 
+                                name="wf-form-Contact-Form" 
+                                id="wf-form-Contact-Form"
+                                aria-label="Contact Form"
+                                data-netlify="true"
+                                netlify-honeypot="bot-field">
 
-    <!-- Champ caché obligatoire pour Netlify -->
-    <input type="hidden" name="form-name" value="wf-form-Contact-Form">
+                            <!-- Champ caché obligatoire pour Netlify -->
+                            <input type="hidden" name="form-name" value="wf-form-Contact-Form">
 
-    <div class="input-group">
-      <div class="input-halves">
-        <div class="text-field-wrapper">
-          <label for="Name" class="form-label">NAME</label>
-          <input class="text-field w-input"
-                 maxlength="256"
-                 name="Name"
-                 id="Name"
-                 type="text"
-                 required>
-        </div>
-        <div class="text-field-wrapper half">
-          <label for="Email" class="form-label">EMAIL</label>
-          <input class="text-field w-input"
-                 maxlength="256"
-                 name="Email"
-                 id="Email"
-                 type="email"
-                 required>
-        </div>
-      </div>
-      <div class="text-field-wrapper half">
-        <label for="Message" class="form-label">MESSAGE</label>
-        <textarea class="text-field area w-input"
-                  maxlength="5000"
-                  name="Message"
-                  id="Message"
-                  required></textarea>
-      </div>
-    </div>
+                            <!-- Champ anti-spam (honeypot) -->
+                            <p style="display:none;">
+                                <label>Ne pas remplir ce champ : <input name="bot-field"></label>
+                            </p>
 
-                                
-
-                                <div class="shapes submit-contain">
-                                    <div data-w-id="d9c180e3-1dbd-47b5-7660-6eed4d1d539d" class="submit-btn-wrapper">
-                                        <input type="submit" name="submit" data-wait="Please wait..."
-                                            class="contact-form-submit w-button" value="Send request"><a
-                                            data-button-style="solid" class="cta-main accent w-inline-block">
-                                            <div class="cta-text" style="">Submit</div>
-                                            <div style="transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                                class="cta-icon-wrap"><svg
-                                                    style="transform: translate3d(-20px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-                                                    xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 16"
-                                                    fill="none" class="cta-icon">
-                                                    <path d="M0.90332 8.04297L19.0446 8.04297" stroke="currentColor"
-                                                        stroke-width="var(--svg-stroke-width--main)"
-                                                        stroke-miterlimit="10" vector-effect="non-scaling-stroke">
-                                                    </path>
-                                                    <path
-                                                        d="M11.0708 0.710938C11.0708 4.81094 14.6368 8.12807 19.0445 8.12807"
-                                                        stroke="currentColor"
-                                                        stroke-width="var(--svg-stroke-width--main)"
-                                                        stroke-miterlimit="10" vector-effect="non-scaling-stroke">
-                                                    </path>
-                                                    <path
-                                                        d="M19.0967 8.29297C14.6891 8.29297 11.123 11.6101 11.123 15.7101"
-                                                        stroke="currentColor"
-                                                        stroke-width="var(--svg-stroke-width--main)"
-                                                        stroke-miterlimit="10" vector-effect="non-scaling-stroke">
-                                                    </path>
-                                                </svg></div>
-                                        </a>
-                                    </div>
-                                </div><input type="hidden" name="hutk" value=""><input type="hidden" name="ipAddress"
-                                    value=""><input type="hidden" name="pageUri" value=""><input type="hidden"
-                                    name="pageId" value=""><input type="hidden" name="pageName" value="">
-                                <div>
-                                    <div><input type="hidden" name="cf-turnstile-response"
-                                            id="cf-chl-widget-jv4mg_response"
-                                            value="0.CoPTLvAnjIul8sN8ovWq12-57jJoitqjMoj9PGenCgH5ZsVKskKezTxAIrA_wnS6Y0V9r0z0BoPDU2yeFBEIQll1xIqwJdG6RqR01bAFDmXVLM6hwg1i5cbVApCxLJJnE-x2xg6mYCtYXT8KhQBzrVdJKYpAhtKQZbmp9WowpxdoVu4ugJyZXlKpIrsNXDagbKO759LMRSMS0hNFnzP_wjTDRElihH7W0wVdocgi9GghQMoc_EdnCpeEraeGYxf7XvzuUkvxQthgfyqeMPLgKv8g0OclLrXZ3XyaCxYBa76mZCgdia8zF5ufqa1bSDEnG-tTCoJ_vxvyW5ZEM9NbVngIwMTyF7SxaaBSbv7osgVXTvIJI1Das3W0tFZ0JXMFQVCN7Jrcn7VJk2vph6hYzkN3ffIYIfp2tmXKizWROlFN5nMBmvBZxQujwhYdhVOAqwC3EpdfBznANy7Fyjj1fHc1TqsN_uvnG2bM3BBy1FK-2NCCm6BOfKSgKenqaFwHI1J7H1t5e2vuXWDvkA7SH-o_rf0kYQf5DjankbJ0BFvt9CPvjzUYPHyvAKU2DMnpafD5JHcwJ6V0xjMjkfUOPlQ6UZ7igRcDT7jnW9B5nMaP34j7tpId6jaF_33GJlimcQizgGzkjQmg2LFwq9HAGS4Op3g8VNniAAifcm1u8uQ8cp8GAEnVHpPxHejoK8LkmkHre1pyDLzF3vK-5TJCymMMpSXyKvltegTexROkCz-7MOqPmupLQWLABMzv-mu6l82IxQpoLHF92WToTbuiZ4jBm9qveGGXRoA1M1X6YmEUA8fcRBsGpCuFPAbSqwuLRI7G1YbnmOmmB36toZEqPdH9LdSJ8rz_Q7rjF7hgN1c.k2_Tss1jj28yJhznFZmKdQ.098392a91148e1424691b69538ef4af1c9a8ca54ffbfb29dc858b14689d185fe">
-                                    </div>
+                            <div class="input-group">
+                                <div class="input-halves">
+                                <div class="text-field-wrapper">
+                                    <label for="Name" class="form-label">NAME</label>
+                                    <input class="text-field w-input"
+                                        maxlength="256"
+                                        name="Name"
+                                        id="Name"
+                                        type="text"
+                                        required>
                                 </div>
+                                <div class="text-field-wrapper half">
+                                    <label for="Email" class="form-label">EMAIL</label>
+                                    <input class="text-field w-input"
+                                        maxlength="256"
+                                        name="Email"
+                                        id="Email"
+                                        type="email"
+                                        required>
+                                </div>
+                                </div>
+                                <div class="text-field-wrapper half">
+                                <label for="Message" class="form-label">MESSAGE</label>
+                                <textarea class="text-field area w-input"
+                                            maxlength="5000"
+                                            name="Message"
+                                            id="Message"
+                                            required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="shapes submit-contain">
+                                <div class="submit-btn-wrapper">
+                                <input type="submit" 
+                                        name="submit" 
+                                        class="contact-form-submit w-button" 
+                                        value="Send request">
+                                <a data-button-style="solid" class="cta-main accent w-inline-block">
+                                    <div class="cta-text">Submit</div>
+                                    <div class="cta-icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 16" fill="none" class="cta-icon">
+                                        <path d="M0.90332 8.04297L19.0446 8.04297" stroke="currentColor"
+                                            stroke-width="var(--svg-stroke-width--main)"
+                                            stroke-miterlimit="10" vector-effect="non-scaling-stroke"></path>
+                                        <path d="M11.0708 0.710938C11.0708 4.81094 14.6368 8.12807 19.0445 8.12807"
+                                            stroke="currentColor"
+                                            stroke-width="var(--svg-stroke-width--main)"
+                                            stroke-miterlimit="10" vector-effect="non-scaling-stroke"></path>
+                                        <path d="M19.0967 8.29297C14.6891 8.29297 11.123 11.6101 11.123 15.7101"
+                                            stroke="currentColor"
+                                            stroke-width="var(--svg-stroke-width--main)"
+                                            stroke-miterlimit="10" vector-effect="non-scaling-stroke"></path>
+                                    </svg>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
                             </form>
+
                             <div class="success-message w-form-done" tabindex="-1" role="region"
                                 aria-label="Contact Form success">
                                 <div>We'll get back to you ASAP!</div>
