@@ -371,6 +371,38 @@ iframe {
     margin-bottom: 2rem;
 }
 
+
+/* Responsive pour téléphones */
+@media screen and (max-width: 480px) {
+    .cta-container {
+        padding: 1.5rem; /* moins d'espace autour */
+    }
+
+    .cta-block {
+        padding: 2rem;
+        border-radius: 30px; /* un peu moins arrondi pour les petits écrans */
+        width: 90%; /* laisse un peu de marge sur les côtés */
+    }
+
+    .cta-chiffres {
+        font-size: 2rem; /* réduit la taille du titre */
+        margin-bottom: 1rem;
+    }
+
+    .cta-description {
+        font-size: 1rem; /* réduit la taille du texte */
+        margin-bottom: 1rem;
+    }
+
+    .bouton-cta {
+        padding: 15px 20px; /* réduit la taille du bouton */
+        font-size: 1rem; /* réduit le texte du bouton */
+    }
+}
+
+
+
+
 /* Responsive pour téléphone */
 @media screen and (max-width: 768px) {
     .chiffres-stats {
