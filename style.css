@@ -117,6 +117,286 @@ body {
     margin-bottom: 30px !important;
 }
 
+
+.portfolio_item_tag { 
+    border: 2px solid #2196f3;
+}
+
+.portfolio_item_review {
+    border-radius: 2rem;
+}
+
+.portfolio_card {
+    border-radius: 2rem;
+}
+
+.stats_portfolio {
+  display: flex;
+  flex-direction: row; 
+  gap: 1rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 600;
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(2rem, 4vw, 3rem);   /* rond plus grand */
+  height: clamp(2rem, 4vw, 3rem);
+  border-radius: 50%;
+  background: #2b2b2b; /* gris noir */
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column; /* met % au-dessus du label */
+  line-height: 1.2;
+}
+
+.stat-number {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-weight: 500;
+  opacity: 0.8; /* un peu plus discret que le % */
+}
+
+
+.stat-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: clamp(2.5rem, 5vw, 3.5rem) !important;   /* rond plus grand */
+  height: clamp(2.5rem, 5vw, 3.5rem) !important;
+  border-radius: 50% !important;
+  background: #2b2b2b !important; /* gris noir */
+  flex-shrink: 0 !important;
+}
+
+.plus-icon {
+  width: 60% !important;  /* taille relative dans le rond */
+  height: 60% !important;
+  stroke: white !important;
+  stroke-width: 2 !important; /* épaisseur du trait (mets 1 pour plus fin, 3 pour plus épais) */
+  stroke-linecap: round !important; /* bouts arrondis */
+}
+
+/* Resolution des problèmes lié à l'intégration de la section portfolio */
+.title-project {
+    color: black !important;
+}
+
+.button-text, .button-icon, .portfolio_item_tag {
+    color: black;
+}
+
+.portfolio_button {
+  display: inline-flex !important;       /* place texte + icône sur une même ligne */
+  align-items: center !important;        /* aligne verticalement au centre */
+  gap: 0.5rem !important;                /* espace entre "Watch live" et la flèche */
+  text-decoration: none !important;      /* optionnel : enlève le soulignement */
+}
+
+.button-text {
+  display: inline-block !important;      /* évite que le texte prenne toute la ligne */
+}
+
+.button-icon {
+  display: flex !important;              /* centre bien le SVG */
+  align-items: center !important;
+  justify-content: center !important;
+  width: 1em !important;                 /* ajuste la largeur du bloc icône */
+  height: 1em !important;                /* ajuste la hauteur du bloc icône */
+}
+
+.stat-label {
+    color: #1D1D1D !important;
+    opacity: 70%;
+}
+
+.stat-number {
+    color: #1D1D1D !important;
+    opacity: 100% !important;
+}
+
+.client-name {
+    color: black;
+}
+
+
+.swiper-button-disabled {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.portfolio_head_wrap {
+    margin-top: 20px !important;
+}
+
+
+iframe {
+  width: 100%;
+  min-height: 1000; /* desktop minimum */
+   overflow: hidden;   
+}
+
+@media (max-width: 768px) {
+  iframe {
+    min-height: 1000px; /* mobile plus grand */
+  }
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: auto !important;
+}
+
+.iframe-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+}
+
+.stats-block {
+    background-color: #161616;
+    color: #FFFFFF;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Unbounded", sans-serif;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.chiffres {
+    margin-bottom: 2rem;
+}
+
+.chiffres-stats {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #FFFFFF;
+    gap: 4.5rem;
+}
+
+.stats-description {
+    margin-bottom: 5rem;
+}
+
+.items-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chiffre-item {
+  font-size: 2.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    text-align: center;
+}
+
+
+.cta-block {
+    background-color: #2196f3;
+    color: #FFFFFF;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Unbounded", sans-serif;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.bouton-cta {
+    background-color: white;
+    padding: 25px;
+    border-radius: 50px;
+    color: #161616;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.cta-chiffres {
+    margin-bottom: 2rem;
+    color: #161616;
+    font-size: 3.5rem;
+}
+
+.cta-description {
+    margin-bottom: 2rem;
+}
+
+/* Responsive pour téléphone */
+@media screen and (max-width: 768px) {
+    .chiffres-stats {
+        flex-direction: column;   /* les stats passent en colonne */
+        gap: 2rem;                /* espace réduit entre les items */
+    }
+
+    .stats-block {
+        padding: 2rem;            /* padding réduit sur petit écran */
+        border-radius: 30px;      /* coins un peu moins larges */
+    }
+
+    .chiffres {
+        font-size: 1.5rem;        /* taille du titre adaptée */
+        text-align: center;
+    }
+
+    .stats-description {
+        text-align: center;
+    }
+
+    
+
+
+}
+
 @media (max-width: 768px) {
   .tag-container {
     gap: 0.5rem;
@@ -219,3 +499,77 @@ body {
 .projet-tittle {
     color: black;
 }
+
+
+
+
+
+.services-section {
+  padding: 50px 20px;
+  background: #f5f5f5;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.service-box {
+  flex: 1 1 300px;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  padding: 30px;
+  text-align: center;
+}
+
+.service-box .icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.service-box p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Version mobile (moins de 600px) */
+@media (max-width: 600px) {
+  .service-box {
+    flex: 1 1 90%;         /* prend ~90% de la largeur du conteneur */
+    max-width: 90%;
+    padding: 20px;         /* padding réduit */
+    border-radius: 16px;   /* angles un peu moins grands */
+  }
+
+  .service-box .icon {
+    font-size: 36px;       /* icône réduite */
+    margin-bottom: 15px;
+  }
+
+  .service-box h3 {
+    font-size: 18px;       /* titre plus petit */
+  }
+
+  .service-box p {
+    font-size: 14px;       /* texte plus petit */
+  }
+}
+
+
+
+
+.service-title {
+    color: #161616;
+    font-size: 2.5rem;
+}
+
